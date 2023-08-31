@@ -1,0 +1,139 @@
+.bitlot__nav {
+  background-color: var(--color-bg-box);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 45px;
+  margin: 1rem 4rem 10rem 4rem;
+  padding: 0.75rem;
+  transition: 0.5s;
+}
+
+.bitlot__nav:hover {
+  box-shadow: 1px 2px 4px 2px var(--color-heading);
+}
+
+.bitlot__nav-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 4rem;
+  margin-right: 3rem;
+  
+}
+.bitlot__nav img{   
+  width: 50px;
+}
+.bitlot__nav-link a {  
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: var(--color-text);
+  text-decoration: none;
+  cursor: pointer;
+  transition: 1s;
+}
+.bitlot__nav-link a:hover {
+  text-decoration: underline;  
+  text-decoration-line: 10px;  
+  text-decoration-thickness: .2rem;
+  text-decoration-color: var(--color-hover);
+}
+
+.bitlot__sm {
+  display: none;
+}
+.bitlot__sm svg {
+  color: var(--color-text);
+  cursor: pointer;  
+  margin-right: 1rem;
+  transition: .25s;
+}
+
+.bitlot__sm svg:hover {
+  color: var(--color-hover);
+}
+
+.bitlot__nav-sm {  
+  background-color: var(--color-bg-box);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;  
+  width: 100%;
+  min-height: 100%;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  z-index: 4;
+  padding: 1rem;
+}
+.bitlot__nav-sm-logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bitlot__nav-sm-link  {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4rem;  
+  margin: 3rem;
+}
+
+.bitlot__nav-sm-link a { 
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: var(--color-text);
+  cursor: pointer;
+  z-index: 3;
+  transition: .5s;
+}
+
+.bitlot__nav-sm-link a:hover {
+  color: var(--color-hover);
+}
+
+@media screen and (max-width: 1050px) {
+  .bitlot__nav {
+    justify-content: space-between;
+    margin-bottom: 9rem;
+  }  
+  .bitlot__nav-link {
+    gap: 2rem;
+    margin-right: 2rem;
+  }
+  h1 {
+    font-size: 30px;
+    margin-left: 2rem;
+  }
+}
+
+@media screen and (max-width: 800px) {  
+  .bitlot__nav {
+    margin: 1rem 2rem 10rem 2rem;
+  }
+  .bitlot__nav-link {
+    display: none;
+  }
+  .bitlot__sm {
+    display: flex;
+  }  
+  h1 {
+    margin-left: 1rem;
+  } 
+}
+
+@media screen and (max-width: 450px) {  
+  .bitlot__nav {
+    margin: 1rem 1rem 10rem 1rem;
+  }
+  .bitlot__nav img{   
+    width: 40px;
+  }
+}

@@ -1,0 +1,133 @@
+.bitlot__countdown {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 25rem;
+  }
+  
+  .bitlot__countdown-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+    padding: 2rem;
+  }
+  
+  .bitlot__countdown-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
+  
+  h2 {  
+    color: var(--color-heading);
+    font-size: 3.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .countdown {
+    display: flex;
+    text-align: center;
+  }  
+  
+  .container-day,
+  .container-hour,
+  .container-minute,
+  .container-second {
+    margin: 4rem 5rem;
+  }
+  
+  .day,
+  .hour,
+  .minute,
+  .second {
+    font-size: 2.5rem;
+    color: var(--color-text);
+    cursor: default;
+  }
+  
+  .container-countdown-heading {  
+    font-size: 21px;
+    color: var(--color-gray);
+    cursor: default;
+  }
+  
+  @media screen and (max-width: 1250px) {  
+    .container-day,
+    .container-hour,
+    .container-minute,
+    .container-second {
+      margin: 5rem 3rem;
+    }
+    
+    .day,
+    .hour,
+    .minute,
+    .second {
+      font-size: 2.5rem;
+    }
+  
+    .container-countdown-heading {
+      font-size: 18px;
+    }
+  }
+  
+  @media screen and (max-width: 700px) {
+    .container-day,
+    .container-hour,
+    .container-minute,
+    .container-second {
+      margin: 4rem 1rem;
+    }
+    
+  .day,
+  .hour,
+  .minute,
+  .second {
+    font-size: 2rem;
+  }
+  
+  
+  .container-countdown-heading {  
+    font-size: 16px;
+  }
+  
+  }
+  
+  @media screen and (max-width: 450px) {
+    .container-day,
+    .container-hour,
+    .container-minute,
+    .container-second {
+      margin: 4rem 1rem;
+    }
+    
+    .day,
+    .hour,
+    .minute,
+    .second {
+      font-size: 1.5rem;
+    }
+    
+    
+    .container-countdown-heading {  
+      font-size: 14px;
+    }
+  
+    h2 {
+      font-size: 3rem;
+    }
+  }
+  
+  @media screen and (max-width: 350px) {
+    h2 {
+      font-size: 2.5rem;
+    }
+  }

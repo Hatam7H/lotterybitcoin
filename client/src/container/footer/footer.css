@@ -1,0 +1,76 @@
+.bitlot__footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: .5rem;
+}
+
+.h2 {
+  color: var(--color-heading);
+  font-size: 3.5rem;
+  margin: 0rem 1rem;
+  margin-bottom: 10rem;
+}
+
+.bitlot__footer-i {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+  margin-top: 0;
+}
+
+.bitlot__footer-i p {
+  color: var(--color-text);
+  cursor: default;
+  margin-right: 2rem;
+}
+
+.bitlot__footer-i svg {
+  margin: 1rem;
+  color: var(--color-text);
+  transition: .3s;
+  cursor: pointer;
+}
+
+.bitlot__footer-i svg:hover {
+  color: var(--color-hover);
+}
+
+@media screen and (max-width: 1050px){  
+  .bitlot__footer-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .bitlot__footer-i {
+    margin: 2rem 1rem;
+  }
+}
+
+@media screen and (max-width: 700px){
+  .bitlot__footer-container {
+    padding: 1rem;
+  }
+  .bitlot__footer-i {
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 450px){
+  .h2  {
+    font-size: 3rem;
+  }
+  .bitlot__footer-sign {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 350px){
+  .h2  {
+    font-size: 2.5rem;
+  }
+}

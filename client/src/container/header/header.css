@@ -1,0 +1,154 @@
+.bitlot__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5rem;
+    margin: 0 2rem;
+    margin-bottom: 20rem;
+  }
+  
+  .bitlot__header-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+  }
+  
+  .bitlot__header-info h1 {
+    color: var(--color-text);
+    font-size: 5rem;
+    cursor: default;
+  }
+  
+  .bitlot__header-info p {
+    color: var(--color-gray);
+    font-size: 20px;
+  }
+  
+  .bitlot__header-info h1 span:nth-child(2) {
+    color: var(--color-heading);  
+    animation: infinite;
+    animation-name: fade;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+  
+  }
+  @keyframes fade {
+    0% {
+      opacity: 100%;
+    }
+    5% {
+      opacity: 90%;
+    }
+    10% {
+      opacity: 80%;
+    }
+    15% {
+      opacity: 70%;
+    }
+    20% {
+      opacity: 60%;
+    }
+    25% {
+      opacity: 50%;
+    }
+    30% {
+      opacity: 40%;
+    }
+    35% {
+      opacity: 30%;
+    }
+    40% {
+      opacity: 20%;
+    }
+    45% {
+      opacity: 10%;
+    }
+    50% {
+      opacity: 0%;
+    }
+    55% {
+      opacity: 10%;
+    }
+    60% {
+      opacity: 20%;
+    }
+    65% {
+      opacity: 30%;
+    }
+    70% {
+      opacity: 40%;
+    }
+    75% {
+      opacity: 50%;
+    }
+    80% {
+      opacity: 60%;
+    }
+    85% {
+      opacity: 70%;
+    }
+    90% {
+      opacity: 80%;
+    }
+    95% {
+      opacity: 90%;
+    }
+    100% {
+      opacity: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 1750px ){
+    .bitlot__header-info h1 {
+      font-size: 3.5rem;
+    }
+  }
+  
+  @media screen and (max-width: 1250px){  
+    .bitlot__header {
+      margin: 0rem;
+      margin-bottom: 15rem;
+    }
+    .bitlot__header {
+      flex-direction: column;
+    }
+  }
+  
+  @media screen and (max-width: 700px){
+  
+    .bitlot__header-info p {
+      font-size: 16px;
+    }
+  }
+  
+  @media screen and (max-width: 450px){
+  
+    .bitlot__header-info p {
+      font-size: 14px;
+    }
+  }
+  @media screen and (max-width: 350px){
+    .bitlot__header-info h1 {
+      color: var(--color-text);
+      font-size: 2.5rem;
+      cursor: default;
+    }
+    
+    .bitlot__header-info p {
+      color: var(--color-gray);
+      font-size: 12px;
+    }
+    .bitlot__header-img img {
+      width: 100%;
+    }
+  }
+  
+  

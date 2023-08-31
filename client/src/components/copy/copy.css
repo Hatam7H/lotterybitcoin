@@ -1,0 +1,70 @@
+.copy-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .copy-link h4 {
+    color: var(--color-gray);
+    font-size: 16px;
+  }
+  
+  .copy__input {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .copy__input input {
+    background-color: var(--color-bg);
+    color: var(--color-gray);
+    border: 3px solid var(--color-bg-box);
+    font-size: 14px;
+    border-radius: 15px;
+    outline: none;
+    
+    padding: .75rem 4rem;
+  }
+  
+  .copy__input button {  
+    cursor: pointer;
+    background-color: var(--color-heading);
+    color: var(--color-bg);  
+    border-radius: 5px;
+    border: none;
+    outline: none;
+  
+    padding: .25rem 0.5rem;
+    transition: .25s;
+    box-shadow: 1px 1px 10px 1px var(--color-heading);
+  }
+  .copy-link button:hover {
+    background-color: var(--color-hover);
+  }
+
+    
+  @media screen and (max-width: 450px){
+    .copy-link h4 {
+      font-size: 14px;
+    }
+    .copy__input {
+      flex-direction: column;
+    }
+    .copy__input input {
+      width: 100%;
+    }
+    .copy__input button {
+      width: 100%;
+      border-radius: 10px;
+    }
+  }
+    
+  @media screen and (max-width: 350px){
+    .copy-link h4 {
+      font-size: 12px;
+    }
+  }
